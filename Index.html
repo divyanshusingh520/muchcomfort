@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="header-tape">
+      FREE SHIPPING ON ALL ORDERS OVER $49
+    </div>
+    <nav>
+      <div class="page-width">
+        <div class="nav-wrapper">
+          <div class="menu" id="myTopnav">
+            <ul>
+              <li class="icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="openNav()">&#9776;</a>
+              </li>
+              <li class="shop">shop</li>
+              <li class="style"><img src="/Image/muchcomfor.jpg"></li>
+              <li><svg class="search" width="28" height="28" viewBox="0 0 28 28" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="9.5" cy="9.5" r="8.375" stroke="#002E64" stroke-width="2.25"></circle>
+                  <path d="M15.5874 15.8943L26 26" stroke="#002E64" stroke-width="2.25" stroke-linecap="round"></path>
+                </svg>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M25.3368 22.4551C23.1367 22.4551 21.3468 24.1891 21.3468 26.3204C21.3468 28.4517 23.1367 30.1857 25.3368 30.1857C27.5369 30.1857 29.3268 28.4517 29.3268 26.3204C29.3268 24.1891 27.5369 22.4551 25.3368 22.4551ZM25.3368 27.8665C24.4566 27.8665 23.7408 27.1731 23.7408 26.3204C23.7408 25.4677 24.4566 24.7743 25.3368 24.7743C26.217 24.7743 26.9328 25.4677 26.9328 26.3204C26.9328 27.1731 26.217 27.8665 25.3368 27.8665Z"
+                    fill="#002E64"></path>
+                  <path
+                    d="M31.7456 7.51594C31.519 7.23494 31.1714 7.07104 30.8032 7.07104H7.38879L6.31147 2.70437C6.1826 2.18258 5.70097 1.81421 5.14715 1.81421H1.19701C0.535878 1.81415 0 2.33328 0 2.97375C0 3.61422 0.535878 4.13335 1.19701 4.13335H4.20234L8.09261 19.9025C8.22149 20.4247 8.70311 20.7926 9.25693 20.7926H27.8905C28.4407 20.7926 28.9203 20.4293 29.0524 19.9121L31.9651 8.50928C32.0532 8.16301 31.9722 7.79694 31.7456 7.51594ZM26.954 18.4735H10.2017L7.96092 9.39024H29.2737L26.954 18.4735Z"
+                    fill="#002E64"></path>
+                  <path
+                    d="M10.8529 22.4551C8.6528 22.4551 6.86292 24.1891 6.86292 26.3204C6.86292 28.4517 8.65286 30.1857 10.8529 30.1857C13.053 30.1857 14.843 28.4517 14.843 26.3204C14.843 24.1891 13.053 22.4551 10.8529 22.4551ZM10.8529 27.8665C9.97275 27.8665 9.25693 27.1731 9.25693 26.3204C9.25693 25.4677 9.97275 24.7743 10.8529 24.7743C11.7331 24.7743 12.4489 25.4677 12.4489 26.3204C12.4489 27.1731 11.7331 27.8665 10.8529 27.8665Z"
+                    fill="#002E64"></path>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <!-- <div class="menu" id="myTopnav">
+      <ul>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="openNav()">&#9776;</a>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Special Deals</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Happy Customers</a></li>
+
+      </ul>
+    </div> -->
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="input-box">
+        <input type="search" placeholder="search products">
+        <svg class="searchs" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="9.5" cy="9.5" r="8.375" stroke="#002E64" stroke-width="2.25"></circle>
+          <path d="M15.5874 15.8943L26 26" stroke="#002E64" stroke-width="2.25" stroke-linecap="round"></path>
+        </svg>
+      </div>
+      <a href="#">Shop</a>
+
+
+    </div>
+
+
+
+
+
+
+
+  </header>
+
+  <div class="main">
+
+    <div class="banner-section">
+      <div class="banner-section-first">
+
+        <img class="image1" src="/Image/banners.jpg">
+        <img class="image2" src="/Image/bannerslide2.png">
+        <div class="banner-section-content">
+          <h1>Brighten Your<br> Day</h1>
+          <p>Food fights without the sticky cleanup</p>
+          <button>SHOP NOW</button>
+        </div>
+      </div>
+      <div class="banner-section-first">
+
+        <img class="image1" src="/Image/banner1.jpg">
+        <img class="image2" src="/Image/bannerslide1.png">
+        <div class="banner-section-content">
+          <h1><br> Day</h1>
+          <p>Food fights without the sticky cleanup</p>
+          <button>SHOP NOW</button>
+        </div>
+      </div>
+      <div class="banner-section-first">
+
+        <img class="image1" src="/Image/banner2.jpg">
+        <img class="image2" src="/Image/bannerslide.png">
+        <div class="banner-section-content">
+          <h1>Brighten Your<br> Day</h1>
+          <p>Food fights without the sticky cleanup</p>
+          <button>SHOP NOW</button>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- section much wow start -->
+
+    <div class="much-wow-section">
+      <div class="much-wow-section-wrapper-main">
+        <div class="much-wow-section-wrapper-upper">
+          <div class="much-wow-section-wrapper">
+            <div class="much-wow-section-wrapper-image">
+              <img src="/Image/image2.jpg">
+              <!-- <img src="/Image/image2.jpg">
+          <img src="/Image/image2.jpg"> -->
+              <div class="much-wow-section-wrapper-image-contents">
+                <div>Dill <br> Pickle</div>
+                <div>
+                  <li class="next"><svg width="20" height="34" viewBox="0 0 20 34" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M19.1406 16.1693L4.41969 1.44863C4.07921 1.10789 3.6247 0.920166 3.14008 0.920166C2.65545 0.920166 2.20094 1.10789 1.86047 1.44863L0.776373 2.53245C0.0709463 3.23869 0.0709463 4.38652 0.776373 5.09168L13.1379 17.4532L0.762657 29.8284C0.42218 30.1691 0.234192 30.6234 0.234192 31.1077C0.234192 31.5926 0.42218 32.0469 0.762657 32.3879L1.84675 33.4714C2.18749 33.8122 2.64173 33.9999 3.12636 33.9999C3.61099 33.9999 4.06549 33.8122 4.40597 33.4714L19.1406 18.7374C19.4819 18.3955 19.6693 17.9392 19.6682 17.454C19.6693 16.9669 19.4819 16.5108 19.1406 16.1693Z"
+                        fill="#002E64"></path>
+                    </svg></li>
+                </div>
+              </div>
+            </div>
+            <div class="much-wow-section-wrapper-image">
+              <img src="/Image/image3.png">
+              <!-- <img src="/Image/image2.jpg">
+          <img src="/Image/image2.jpg"> -->
+              <div class="much-wow-section-wrapper-image-contents">
+                <div>Dill <br> Pickle</div>
+                <div>
+                  <li class="next"><svg width="20" height="34" viewBox="0 0 20 34" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M19.1406 16.1693L4.41969 1.44863C4.07921 1.10789 3.6247 0.920166 3.14008 0.920166C2.65545 0.920166 2.20094 1.10789 1.86047 1.44863L0.776373 2.53245C0.0709463 3.23869 0.0709463 4.38652 0.776373 5.09168L13.1379 17.4532L0.762657 29.8284C0.42218 30.1691 0.234192 30.6234 0.234192 31.1077C0.234192 31.5926 0.42218 32.0469 0.762657 32.3879L1.84675 33.4714C2.18749 33.8122 2.64173 33.9999 3.12636 33.9999C3.61099 33.9999 4.06549 33.8122 4.40597 33.4714L19.1406 18.7374C19.4819 18.3955 19.6693 17.9392 19.6682 17.454C19.6693 16.9669 19.4819 16.5108 19.1406 16.1693Z"
+                        fill="#002E64"></path>
+                    </svg></li>
+                </div>
+              </div>
+            </div>
+            <div class="much-wow-section-wrapper-image">
+              <img src="/Image/image2.jpg">
+              <!-- <img src="/Image/image2.jpg">
+          <img src="/Image/image2.jpg"> -->
+              <div class="much-wow-section-wrapper-image-contents">
+                <div>Dill <br> Pickle</div>
+                <div>
+                  <li class="next"><svg width="20" height="34" viewBox="0 0 20 34" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M19.1406 16.1693L4.41969 1.44863C4.07921 1.10789 3.6247 0.920166 3.14008 0.920166C2.65545 0.920166 2.20094 1.10789 1.86047 1.44863L0.776373 2.53245C0.0709463 3.23869 0.0709463 4.38652 0.776373 5.09168L13.1379 17.4532L0.762657 29.8284C0.42218 30.1691 0.234192 30.6234 0.234192 31.1077C0.234192 31.5926 0.42218 32.0469 0.762657 32.3879L1.84675 33.4714C2.18749 33.8122 2.64173 33.9999 3.12636 33.9999C3.61099 33.9999 4.06549 33.8122 4.40597 33.4714L19.1406 18.7374C19.4819 18.3955 19.6693 17.9392 19.6682 17.454C19.6693 16.9669 19.4819 16.5108 19.1406 16.1693Z"
+                        fill="#002E64"></path>
+                    </svg></li>
+                </div>
+              </div>
+            </div>
+            <div class="much-wow-section-wrapper-image">
+              <img src="/Image/image2.jpg">
+              <!-- <img src="/Image/image2.jpg">
+          <img src="/Image/image2.jpg"> -->
+              <div class="much-wow-section-wrapper-image-contents">
+                <div>Dill <br> Pickle</div>
+                <div>
+                  <li class="next"><svg width="20" height="34" viewBox="0 0 20 34" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M19.1406 16.1693L4.41969 1.44863C4.07921 1.10789 3.6247 0.920166 3.14008 0.920166C2.65545 0.920166 2.20094 1.10789 1.86047 1.44863L0.776373 2.53245C0.0709463 3.23869 0.0709463 4.38652 0.776373 5.09168L13.1379 17.4532L0.762657 29.8284C0.42218 30.1691 0.234192 30.6234 0.234192 31.1077C0.234192 31.5926 0.42218 32.0469 0.762657 32.3879L1.84675 33.4714C2.18749 33.8122 2.64173 33.9999 3.12636 33.9999C3.61099 33.9999 4.06549 33.8122 4.40597 33.4714L19.1406 18.7374C19.4819 18.3955 19.6693 17.9392 19.6682 17.454C19.6693 16.9669 19.4819 16.5108 19.1406 16.1693Z"
+                        fill="#002E64"></path>
+                    </svg></li>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="arrow">
+            <ul>
+
+
+              <li class="prev"><svg width="21" height="34" viewBox="0 0 21 34" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.29245 16.1693L16.0134 1.44863C16.3538 1.10789 16.8083 0.920166 17.293 0.920166C17.7776 0.920166 18.2321 1.10789 18.5726 1.44863L19.6567 2.53245C20.3621 3.23869 20.3621 4.38652 19.6567 5.09168L7.29517 17.4532L19.6704 29.8284C20.0109 30.1691 20.1989 30.6234 20.1989 31.1077C20.1989 31.5926 20.0109 32.0469 19.6704 32.3879L18.5863 33.4714C18.2455 33.8122 17.7913 33.9999 17.3067 33.9999C16.8221 33.9999 16.3675 33.8122 16.0271 33.4714L1.29245 18.7374C0.95117 18.3955 0.76372 17.9392 0.764795 17.454C0.76372 16.9669 0.95117 16.5108 1.29245 16.1693Z"
+                    fill="#002E64"></path>
+                </svg></li>
+              <li class="next"><svg width="20" height="34" viewBox="0 0 20 34" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M19.1406 16.1693L4.41969 1.44863C4.07921 1.10789 3.6247 0.920166 3.14008 0.920166C2.65545 0.920166 2.20094 1.10789 1.86047 1.44863L0.776373 2.53245C0.0709463 3.23869 0.0709463 4.38652 0.776373 5.09168L13.1379 17.4532L0.762657 29.8284C0.42218 30.1691 0.234192 30.6234 0.234192 31.1077C0.234192 31.5926 0.42218 32.0469 0.762657 32.3879L1.84675 33.4714C2.18749 33.8122 2.64173 33.9999 3.12636 33.9999C3.61099 33.9999 4.06549 33.8122 4.40597 33.4714L19.1406 18.7374C19.4819 18.3955 19.6693 17.9392 19.6682 17.454C19.6693 16.9669 19.4819 16.5108 19.1406 16.1693Z"
+                    fill="#002E64"></path>
+                </svg></li>
+            </ul>
+          </div>
+        </div>
+        <div class="much-wow-section-wrapper-image-content">
+          <ul>
+            <li>Much<br>Wow</li>
+            <li class="black">The greatest pillows <br> on planet earth.</li>
+            <li><button>SHOP ALL</button></li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="much-wow-section-wrapper-image-content-footer">
+      <svg width="1448" height="140" viewBox="0 0 1448 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M0.156975 90.0332L60.4838 69.2019C120.811 48.3705 241.464 6.7078 362.118 1.49998C482.771 -3.70784 603.425 27.5392 724.078 58.7863C844.732 90.0334 965.386 121.28 1086.04 116.073C1206.69 110.865 1327.35 69.2021 1387.67 48.3707L1448 27.5394L1448 139.5L1345.5 139.5C1285.17 139.5 1206.69 139.5 1086.04 139.5C965.386 139.5 844.732 139.5 724.079 139.5C603.425 139.5 482.771 139.5 362.118 139.5C241.464 139.5 120.811 139.5 60.4838 139.5L0.156839 139.5L0.156975 90.0332Z"
+          fill="#0099FF"></path>
+      </svg>
+
+    </div>
+
+
+    <!-- section much wow end -->
+
+
+
+
+    <!-- home benefit section start -->
+    <div class="home-benefit-section-start">
+      <div class="home-benefit-section-heading">
+        <p> We believe a pillow can <br>change the world</p>
+      </div>
+      <div class="page-width">
+        <div class="home-benefit-section-wrapper">
+          <div class="home-benefit-section-internal-part">
+            <img src="/Image/image5.jpg">
+            <p class="para1">Vibrant & truly<br>
+              life-like designs</p>
+            <p class="para2">You’ll double-take the fluffy croissant on your<br> couch while your mouth instantly waters
+              for
+              a<br>flaky fresh-baked pastry. Don’t be fooled! These<br> are just pillows.</p>
+          </div>
+          <div class="home-benefit-section-internal-part">
+            <img src="/Image/image6.jpg">
+            <p class="para1">Vibrant & truly<br>
+              life-like designs</p>
+            <p class="para2">You’ll double-take the fluffy croissant on your<br> couch while your mouth instantly waters
+              for
+              a<br>flaky fresh-baked pastry. Don’t be fooled! These<br> are just pillows.</p>
+          </div>
+          <div class="home-benefit-section-internal-part">
+            <img src="/Image/image7.jpg">
+            <p class="para1">Vibrant & truly<br>
+              life-like designs</p>
+            <p class="para2">You’ll double-take the fluffy croissant on your<br> couch while your mouth instantly waters
+              for
+              a<br>flaky fresh-baked pastry. Don’t be fooled! These<br> are just pillows.</p>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="home-benefit-section-footer">
+        <button>SHOP ALL</button>
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- home benefit section end -->
+
+
+    <!-- data section start -->
+    <div class="top">
+      <svg width="1443" height="160" viewBox="0 0 1443 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M3.05176e-05 0L60.1191 35.8333C120.238 71.6667 240.476 143.333 360.714 143.333C480.952 143.333 601.19 71.6667 721.428 56.3095C841.667 40.9524 961.905 81.9048 1082.14 81.9048C1202.38 81.9048 1322.62 40.9524 1382.74 20.4762L1442.86 0V159.5H1382.74C1322.62 159.5 1202.38 159.5 1082.14 159.5C961.905 159.5 841.667 159.5 721.429 159.5C601.19 159.5 480.952 159.5 360.714 159.5C240.476 159.5 120.238 159.5 60.119 159.5H0L3.05176e-05 0Z"
+          fill="#0099FF"></path>
+      </svg>
+    </div>
+
+
+    <div class="data-section">
+      <div class="page-width">
+        <div class="data-section-wrapper">
+          <div class="data-section-content">
+            <img src="/Image/image8.jpg">
+            <p class="para3">Gooey <br>Cinnamon Bun</p>
+            <button>SHOP NOW</button>
+          </div>
+          <div class="data-section-content">
+            <img src="/Image/image9.jpg">
+            <p class="para3">Gooey <br>Cinnamon Bun</p>
+            <button>SHOP NOW</button>
+          </div>
+          <div class="data-section-content">
+            <img src="/Image/image10.jpg">
+            <p class="para3">Gooey <br>Cinnamon Bun</p>
+            <button>SHOP NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- data section end -->
+
+
+
+    <!-- review section start -->
+
+
+
+    <div class="review-section-top">
+      <svg width="1440" height="171" viewBox="0 0 1440 171" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M1440 60.6553L1380 67.8584C1320 75.0614 1200 89.4676 1080 118.28C960 147.092 840 190.31 720 161.498C600 132.686 480 31.843 360 17.4368C240 3.03069 120 75.0613 60 111.077L2.0901e-06 147.092L1.49056e-05 0.499935L60 0.49994C120 0.499946 240 0.499956 360 0.499967C480 0.499977 600 0.499988 720 0.499998C840 0.500009 960 0.500019 1080 0.50003C1200 0.50004 1320 0.500051 1380 0.500056L1440 0.500061L1440 60.6553Z"
+          fill="#0099FF"></path>
+      </svg>
+
+
+    </div>
+
+
+    <div class="review-section">
+      <div class="page-width">
+        <div class="review-section-wrapper">
+          <div class="review-section-content">
+            <p class="para5">At first I thought it was<br> photoshop, but these pillows look <br>even better in real
+              life!</p>
+            <p class="para6">- Michael (San Diego, CA)</p>
+          </div>
+          <div class="review-section-content">
+            <p class="para5">At first I thought it was <br>photoshop, but these pillows look <br>even better in real
+              life!</p>
+            <p class="para6">- Michael (San Diego, CA)</p>
+          </div>
+          <div class="review-section-content">
+            <p class="para5">At first I thought it was <br> photoshop, but these pillows look <br>even better in real
+              life!</p>
+            <p class="para6">- Michael (San Diego, CA)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- review section end -->
+  </div>
+
+  <!-- footer section start -->
+
+  <div class="footer-top">
+    <svg width="1448" height="140" viewBox="0 0 1448 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M0.156975 90.0332L60.4838 69.2019C120.811 48.3705 241.464 6.7078 362.118 1.49998C482.771 -3.70784 603.425 27.5392 724.078 58.7863C844.732 90.0334 965.386 121.28 1086.04 116.073C1206.69 110.865 1327.35 69.2021 1387.67 48.3707L1448 27.5394L1448 139.5L1345.5 139.5C1285.17 139.5 1206.69 139.5 1086.04 139.5C965.386 139.5 844.732 139.5 724.079 139.5C603.425 139.5 482.771 139.5 362.118 139.5C241.464 139.5 120.811 139.5 60.4838 139.5L0.156839 139.5L0.156975 90.0332Z"
+        fill="#002E64"></path>
+    </svg>
+  </div>
+
+  <footer>
+    <div class="review-section">
+      <h1>EXCLUSIVE DISCOUNTS?<br>
+        PRODUCT LAUNCHES? GIVEAWAYS?</h1>
+      <p>Sign up for email and save 10% on your first order $49+.</p>
+
+      <div class="content">
+        <input type="text" placeholder="Email Address">
+        <button>SUBSCRIBE</button>
+      </div>
+      <div class="symbol">
+        <li><svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8.64725 0C4.00107 0 0.221069 3.78 0.221069 8.42618V21.9082C0.221069 26.5543 4.00107 30.3344 8.64725 30.3344H22.1293C26.7754 30.3344 30.5555 26.5543 30.5555 21.9082V8.42618C30.5555 3.78 26.7754 0 22.1293 0H8.64725ZM8.64725 3.37048H22.1293C24.9167 3.37048 27.185 5.63883 27.185 8.42618V21.9082C27.185 24.6956 24.9167 26.9639 22.1293 26.9639H8.64725C5.8599 26.9639 3.59155 24.6956 3.59155 21.9082V8.42618C3.59155 5.63883 5.8599 3.37048 8.64725 3.37048ZM23.8144 5.05573C23.3676 5.05573 22.9389 5.23329 22.6228 5.54932C22.3068 5.86537 22.1293 6.29403 22.1293 6.74101C22.1293 7.18788 22.3068 7.61661 22.6228 7.93263C22.9389 8.24866 23.3676 8.42618 23.8144 8.42618C24.2614 8.42618 24.69 8.24866 25.0062 7.93263C25.3222 7.61661 25.4997 7.18788 25.4997 6.74101C25.4997 6.29403 25.3222 5.86537 25.0062 5.54932C24.69 5.23329 24.2614 5.05573 23.8144 5.05573ZM15.3883 6.74101C10.742 6.74101 6.96208 10.521 6.96208 15.1672C6.96208 19.8134 10.742 23.5934 15.3883 23.5934C20.0345 23.5934 23.8144 19.8134 23.8144 15.1672C23.8144 10.521 20.0345 6.74101 15.3883 6.74101ZM15.3883 10.1115C18.1756 10.1115 20.444 12.3798 20.444 15.1672C20.444 17.9546 18.1756 20.2229 15.3883 20.2229C12.6009 20.2229 10.3325 17.9546 10.3325 15.1672C10.3325 12.3798 12.6009 10.1115 15.3883 10.1115Z"
+              fill="white"></path>
+          </svg>
+        </li>
+        <li><svg width="28" height="31" viewBox="0 0 28 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M27.608 7.59533C25.8741 7.59533 24.2743 7.02094 22.9897 6.05194C21.5163 4.94112 20.4577 3.31168 20.0839 1.43362C19.9913 0.969592 19.9414 0.49073 19.9367 0H14.9837V13.5339L14.9778 20.9471C14.9778 22.929 13.6872 24.6095 11.8981 25.2005C11.3789 25.372 10.8181 25.4533 10.2342 25.4212C9.48896 25.3803 8.79054 25.1554 8.18351 24.7922C6.89171 24.0197 6.01587 22.6181 5.99214 21.0147C5.95475 18.5089 7.98057 16.4659 10.4847 16.4659C10.9789 16.4659 11.4537 16.5466 11.8981 16.6931V12.994V11.6642C11.4293 11.5948 10.9522 11.5586 10.4698 11.5586C7.72898 11.5586 5.16555 12.6979 3.33318 14.7504C1.94821 16.3015 1.11747 18.2804 0.989304 20.3555C0.821376 23.0815 1.81886 25.6728 3.75329 27.5847C4.03752 27.8654 4.336 28.1259 4.64812 28.3662C6.30663 29.6426 8.33423 30.3345 10.4698 30.3345C10.9522 30.3345 11.4293 30.2989 11.8981 30.2294C13.8931 29.9339 15.7337 29.0207 17.1864 27.5847C18.9713 25.8206 19.9575 23.4785 19.9681 20.9857L19.9426 9.91547C20.7941 10.5723 21.7252 11.1159 22.7244 11.5378C24.2785 12.1935 25.9263 12.5258 27.6222 12.5252V8.92867V7.59415C27.6234 7.59533 27.6092 7.59533 27.608 7.59533Z"
+              fill="white"></path>
+          </svg></li>
+      </div>
+      <p class="para8">© Much Comfort, 2022A Broadway, Santa Monica, CA 90291</p>
+      <p class="para9">Customer Service</p>
+      <p class="para8">Phone: +1 323-985-3060 |
+        Email: hello@muchcomfort.com</p>
+      <p class="para8">Terms & Conditions |
+        Privacy Policy |
+        Shipping & Returns |
+        Contact Us</p>
+    </div>
+
+
+
+
+
+
+  </footer>
+
+  <!-- footer section end -->
+  <script class="javascript">
+    $(document).ready(function () {
+      $('.review-section-wrapper').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplayTimeout: 1000,
+
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              arrows: true,
+              autoplay: true,
+              autoplayTimeout: 3000,
+              dots: true
+
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    });
+  </script>
+
+  <script class="javascript">
+    $(document).ready(function () {
+      $('.much-wow-section-wrapper-image-content').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        
+
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              arrows: true,
+              autoplay: true,
+              autoplayTimeout: 3000,
+              dots: true
+
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    });
+  </script>
+
+
+  <script class="javascript">
+    $(document).ready(function () {
+      $('.much-wow-section-wrapper').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // autoplay: true,
+        // autoplayTimeout: 1000,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+
+
+
+
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              arrows: true,
+              autoplay: true,
+              // autoplayTimeout: 3000,
+              // dots: true
+
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    });
+  </script>
+
+  <script class="javascript">
+    $(document).ready(function () {
+      $('.banner-section').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplayTimeout: 1000,
+
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              arrows: true,
+              autoplay: true,
+              autoplayTimeout: 3000,
+              dots: true
+
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        //document.getElementById("header").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        //document.getElementById("header").style.marginLeft= "0";
+      };
+    });
+  </script>
+
+</body>
+
+</html>
